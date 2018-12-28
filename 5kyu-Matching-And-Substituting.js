@@ -1,5 +1,4 @@
 function change(s, prog, version) {
-  console.log(s);
   let called = false;
   const regexp = /(Program title: .+\n)(Author: .+\n)(Corporation: .+\n)(Phone: \+1-\d{3}-\d{3}-\d{4}\n)(Date: .+\n)(Version: \d+\.\d+\n)(Level: .+)$/;
   const str = s.replace(regexp, (all, programTitle, author, corp, phone, date, versionStr) => {
