@@ -1,6 +1,13 @@
 function Node(data) {
   this.data = data;
   this.next = null;
+
+  this.toString = () {
+    if (this.next) {
+      return `${this.data} -> ${this.next.toString()}`;
+    }
+    return `${this.data} -> null`;
+  };
 }
 
 function push(head, data) {
