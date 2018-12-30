@@ -19,3 +19,7 @@ function push(head, data) {
 function buildOneTwoThree() {
   return [3, 2, 1].reduce((node, num) => push(node, num), null);
 }
+
+function buildList(arr) {
+  return arr.reverse().reduce((node, num) => push(node, num), null);
+}
