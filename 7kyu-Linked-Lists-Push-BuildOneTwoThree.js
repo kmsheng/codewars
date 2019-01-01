@@ -1,6 +1,6 @@
-function Node(data) {
+function Node(data, next) {
   this.data = data;
-  this.next = null;
+  this.next = next || null;
 
   this.toString = () => {
     if (this.next) {
